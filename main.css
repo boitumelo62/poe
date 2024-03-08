@@ -1,0 +1,82 @@
+/*Header*/
+
+header {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 7fr 1fr 0.5fr;
+}
+
+div.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.contacts p {
+  text-align: right;
+  width: fit-content;
+  margin: 15px 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+div.socials {
+  display: flex;
+  flex-direction: row;
+  margin: 20% 0;
+  margin-left: 15px;
+}
+
+div.socials a img {
+  width: 60%;
+  margin-right: 30px;
+}
+
+/*about*/
+
+main#about {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 3%;
+  width: 80%;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main#about img#profile {
+  width: 90%;
+  margin: auto 5%;
+  border-radius: 5%;
+}
+
+main#about div.hello {
+  margin: 14% 0;
+}
+
+/*Portfolio*/
+
+main#portfoliopage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3%;
+  row-gap: 10px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+main#portfoliopage div {
+  background-color: burlywood;
+  height: 25vw;
+  margin-bottom: 10px;
+  border-radius: 5%;
+  text-align: center;
+  /*position: relative;*/
+}
+
+div span {
+  background-color: black;
+  /*position: absolute;*/
+  bottom: 0;
+}
