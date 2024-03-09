@@ -55,6 +55,17 @@ main#about div.hello {
   margin: 14% 0;
 }
 
+main#about section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+main#about section img {
+  width: 8%;
+  margin: 0 10px;
+}
+
 /*Portfolio*/
 
 main#portfoliopage {
