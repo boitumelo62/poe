@@ -4,7 +4,7 @@ header {
   background-color: rgb(255, 255, 255);
   height: 60px;
   display: grid;
-  grid-template-columns: 7fr 1fr auto;
+  grid-template-columns: 7fr 1fr 0.5fr;
   position: fixed;
   left: 0;
   top: 0;
@@ -12,13 +12,14 @@ header {
 
 div.contacts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5px;
 }
 
 div.contacts p {
   text-align: right;
   width: fit-content;
-  margin: 20px 15px;
+  margin: 20px 10px;
 }
 
 header a {
@@ -27,24 +28,24 @@ header a {
 }
 
 div.socials {
-  display: flex;
-  flex-direction: row;
-  margin: 19px 0;
-  margin-left: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 19px 0 19px 5px;
 }
 
 div.socials a img {
   width: 1.4rem;
-  margin-right: 18px;
 }
+
+/*general*/
 
 main {
   padding-top: 55px;
 }
 
-/*about*/
+/*home*/
 
-main#about {
+main#home {
   display: grid;
   grid-template-columns: 4fr 4fr;
   gap: 3%;
@@ -53,23 +54,23 @@ main#about {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main#about img#profile {
+main#home img#profile {
   width: 90%;
   margin: auto 5%;
   border-radius: 5%;
 }
 
-main#about div.hello {
+main#home div.hello {
   margin: 14% 0;
 }
 
-main#about section {
+main#home section {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
 }
 
-main#about section img {
+main#home section img {
   width: 8%;
   margin: 0 10px;
 }
@@ -96,6 +97,6 @@ main#portfoliopage div {
 
 div span {
   background-color: black;
-  /*position: absolute;*/
-  bottom: 0;
+  /*position: absolute;
+  bottom: 0;*/
 }
