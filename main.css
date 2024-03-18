@@ -1,9 +1,13 @@
 /*Header*/
 
 header {
-  height: 50px;
+  background-color: rgb(255, 255, 255);
+  height: 60px;
   display: grid;
-  grid-template-columns: 7fr 1fr 0.5fr;
+  grid-template-columns: 7fr 1fr auto;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 div.contacts {
@@ -14,7 +18,7 @@ div.contacts {
 div.contacts p {
   text-align: right;
   width: fit-content;
-  margin: 15px 15px;
+  margin: 20px 15px;
 }
 
 header a {
@@ -25,13 +29,17 @@ header a {
 div.socials {
   display: flex;
   flex-direction: row;
-  margin: 20% 0;
-  margin-left: 15px;
+  margin: 19px 0;
+  margin-left: 5px;
 }
 
 div.socials a img {
-  width: 60%;
-  margin-right: 30px;
+  width: 1.4rem;
+  margin-right: 18px;
+}
+
+main {
+  padding-top: 55px;
 }
 
 /*about*/
