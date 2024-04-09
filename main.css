@@ -23,8 +23,8 @@ div.contacts {
 }
 
 div.contacts p {
-  text-align: right;
-  width: fit-content;
+  background-color: #e29578;
+  display: flex;
   margin: 20px 10px;
 }
 
@@ -34,9 +34,10 @@ header a {
 }
 
 div.socials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 19px 0 19px 5px;
+  background-color: #e29578;
+  display: flex;
+  gap: 1rem;
+  margin: 20px 10px;
 }
 
 div.socials a img {
@@ -47,6 +48,7 @@ div.socials a img {
 
 body {
   background-color: #edf6f9;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
