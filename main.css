@@ -4,7 +4,7 @@ header {
   background-color: rgb(255, 255, 255);
   height: 60px;
   display: grid;
-  grid-template-columns: 7fr 1fr 0.5fr;
+  grid-template-columns: 7fr 0.8fr 0.5fr;
   position: fixed;
   left: 0;
   top: 0;
@@ -13,7 +13,6 @@ header {
 div.contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 5px;
 }
 
 div.contacts p {
@@ -99,4 +98,36 @@ div span {
   background-color: black;
   /*position: absolute;
   bottom: 0;*/
+}
+
+/*Bio*/
+
+main#bio {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 3%;
+  width: 80%;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main#bio img#profile {
+  width: 90%;
+  margin: auto 5%;
+  border-radius: 5%;
+}
+
+main#bio div.hello {
+  margin: 14% 0;
+}
+
+main#bio section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+main#bio section img {
+  width: 8%;
+  margin: 0 10px;
 }
