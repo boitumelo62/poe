@@ -9,6 +9,7 @@ header {
   position: fixed;
   left: 0;
   top: 0;
+  border-bottom: #006d77 2px solid;
 }
 
 div.logo img {
@@ -46,6 +47,7 @@ div.socials a img {
 
 body {
   background-color: #edf6f9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -55,7 +57,6 @@ main {
 /*home*/
 
 main {
-  background-color: #83c5be;
 }
 
 /*Portfolio*/
@@ -75,8 +76,8 @@ main#portfoliopage section {
 
 main#portfoliopage section span {
   background-color: #006d77;
-  height: 15vw;
-  width: 15vw;
+  height: 15rem;
+  width: 15rem;
   margin-bottom: 10px;
   border-radius: 5%;
   text-align: center;
@@ -90,7 +91,6 @@ main#bio {
   gap: 3%;
   width: 80%;
   margin: 10px auto;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 main#bio img#profile {
