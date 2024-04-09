@@ -1,13 +1,19 @@
 /*Header*/
 
 header {
-  background-color: rgb(255, 255, 255);
+  background-color: #edf6f9;
   height: 60px;
+  width: 100vw;
   display: grid;
   grid-template-columns: 7fr 0.8fr 0.5fr;
   position: fixed;
   left: 0;
   top: 0;
+}
+
+div.logo img {
+  height: 2rem;
+  margin: 15px 15px 0px 25px;
 }
 
 div.contacts {
@@ -38,66 +44,42 @@ div.socials a img {
 
 /*general*/
 
+body {
+  background-color: #edf6f9;
+}
+
 main {
   padding-top: 55px;
 }
 
 /*home*/
 
-main#home {
-  display: grid;
-  grid-template-columns: 4fr 4fr;
-  gap: 3%;
-  width: 80%;
-  margin: 10px auto;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main#home img#profile {
-  width: 90%;
-  margin: auto 5%;
-  border-radius: 5%;
-}
-
-main#home div.hello {
-  margin: 14% 0;
-}
-
-main#home section {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-}
-
-main#home section img {
-  width: 8%;
-  margin: 0 10px;
+main {
+  background-color: #83c5be;
 }
 
 /*Portfolio*/
 
 main#portfoliopage {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 3%;
-  row-gap: 10px;
-  width: 80%;
+  width: 95%;
   margin: 10px auto;
 }
 
-main#portfoliopage div {
-  background-color: burlywood;
-  height: 25vw;
+main#portfoliopage section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3%;
+  row-gap: 10px;
+  margin: 0 50px;
+}
+
+main#portfoliopage section span {
+  background-color: #006d77;
+  height: 15vw;
+  width: 15vw;
   margin-bottom: 10px;
   border-radius: 5%;
   text-align: center;
-  /*position: relative;*/
-}
-
-div span {
-  background-color: black;
-  /*position: absolute;
-  bottom: 0;*/
 }
 
 /*Bio*/
