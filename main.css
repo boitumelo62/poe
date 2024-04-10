@@ -1,3 +1,15 @@
+/*general*/
+
+body {
+  background-color: #edf6f9;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding-top: 55px;
+}
+
 /*Header*/
 
 header {
@@ -5,7 +17,7 @@ header {
   height: 60px;
   width: 100vw;
   display: grid;
-  grid-template-columns: 7fr 0.8fr 0.5fr;
+  grid-template-columns: 7fr 0.8fr;
   position: fixed;
   left: 0;
   top: 0;
@@ -19,11 +31,10 @@ div.logo img {
 
 div.contacts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 div.contacts p {
-  background-color: #e29578;
   display: flex;
   margin: 20px 10px;
 }
@@ -33,27 +44,14 @@ header a {
   color: black;
 }
 
-div.socials {
-  background-color: #e29578;
+div.contacts span {
   display: flex;
   gap: 1rem;
-  margin: 20px 10px;
+  margin: 18px 10px;
 }
 
-div.socials a img {
+div.contacts span img {
   width: 1.4rem;
-}
-
-/*general*/
-
-body {
-  background-color: #edf6f9;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-  padding-top: 55px;
 }
 
 /*home*/
@@ -69,29 +67,30 @@ main#portfoliopage {
 }
 
 main#portfoliopage section {
-  display: flex;
+  background-color: bisque;
+  /*display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 3%;
-  row-gap: 10px;
-  margin: 0 50px;
+  flex-wrap: wrap;*/
+  border-radius: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  overflow: hidden;
+  gap: 20px;
+  margin: 10px 50px;
+  overflow-x: auto;
 }
 
 main#portfoliopage section span {
   background-color: #006d77;
-  height: 15rem;
-  width: 15rem;
-  margin-bottom: 10px;
-  border-radius: 5%;
-  text-align: center;
+  height: 18rem;
+  width: 22rem;
 }
 
 /*Bio*/
 
 main#bio {
-  display: grid;
-  grid-template-columns: 4fr 4fr;
+  /*display: grid;
+  grid-template-columns: 4fr 4fr;*/
   gap: 3%;
   width: 80%;
   margin: 10px auto;
