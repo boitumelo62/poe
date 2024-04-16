@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/yip1fwo.css");
+
 /*general*/
 
 body {
@@ -174,8 +176,27 @@ main#home section.closing {
 /*Portfolio*/
 
 main#portfoliopage {
-  width: 95%;
-  margin: 10px auto;
+  width: 88%;
+  padding-top: 55px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main#portfoliopage div {
+  background-color: #006d77;
+  height: 400px;
+  margin: 20px;
+  border-radius: 1rem;
+}
+
+main#portfoliopage div.short {
+  width: 27vw;
+}
+
+main#portfoliopage div.long {
+  width: 56vw;
 }
 
 /*Bio*/
