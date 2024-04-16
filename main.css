@@ -1,3 +1,14 @@
+/*general*/
+
+body {
+  background-color: #edf6f9;
+  font-family: "Como", Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding-top: 55px;
+}
+
 /*Header*/
 header {
   background-color: #edf6f9;
@@ -41,20 +52,123 @@ div.contacts span img {
   width: 1.4rem;
 }
 
-/*general*/
-
-body {
-  background-color: #edf6f9;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-  padding-top: 55px;
-}
-
 /*home*/
 
-main {
+main#home {
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+main#home section {
+  height: 100vh;
+  width: 88%;
+  padding-top: 55px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+main#home section.landing {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  em {
+    font-style: normal;
+    color: #e29578;
+  }
+
+  button {
+    background-color: #006d77;
+    color: #edf6f9;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    height: 60px;
+    width: 200px;
+  }
+}
+
+main#home section.about {
+  justify-content: space-between;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+main#home section.why {
+  display: grid;
+  grid-template-rows: 4rem auto;
+  margin: auto;
+
+  h1 {
+    font-size: 4rem;
+    padding-top: 275px;
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  p {
+    font-size: 2rem;
+    width: 770px;
+  }
+
+  em {
+    font-style: normal;
+    color: #e29578;
+  }
+}
+
+main#home section.closing {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  em {
+    font-style: normal;
+    color: #e29578;
+  }
+
+  button {
+    background-color: #006d77;
+    color: #edf6f9;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    height: 60px;
+    width: 200px;
+    margin: 0 20px;
+  }
 }
 
 /*Portfolio*/
@@ -62,23 +176,6 @@ main {
 main#portfoliopage {
   width: 95%;
   margin: 10px auto;
-}
-
-main#portfoliopage section {
-  display: flex;
-  flex-direction: row;
-  column-gap: 3%;
-  row-gap: 10px;
-  margin: 0 50px;
-}
-
-main#portfoliopage section span {
-  background-color: #006d77;
-  height: 15rem;
-  width: 15rem;
-  margin-bottom: 10px;
-  border-radius: 5%;
-  text-align: center;
 }
 
 /*Bio*/
