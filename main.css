@@ -1,11 +1,10 @@
 /*Header*/
-
 header {
   background-color: #edf6f9;
   height: 60px;
   width: 100vw;
   display: grid;
-  grid-template-columns: 7fr 0.8fr 0.5fr;
+  grid-template-columns: 7fr 0.8fr;
   position: fixed;
   left: 0;
   top: 0;
@@ -19,12 +18,11 @@ div.logo img {
 
 div.contacts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 div.contacts p {
-  text-align: right;
-  width: fit-content;
+  display: flex;
   margin: 20px 10px;
 }
 
@@ -33,13 +31,13 @@ header a {
   color: black;
 }
 
-div.socials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 19px 0 19px 5px;
+div.contacts span {
+  display: flex;
+  gap: 1rem;
+  margin: 18px 10px;
 }
 
-div.socials a img {
+div.contacts span img {
   width: 1.4rem;
 }
 
