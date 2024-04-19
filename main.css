@@ -57,6 +57,9 @@ div.contacts span img {
 /*home*/
 
 main#home {
+  /*background-image: url("images/background.png");
+  background-size: 100%;
+  background-position: center;*/
   height: 100vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -185,18 +188,19 @@ main#portfoliopage {
 }
 
 main#portfoliopage div {
-  background-color: #006d77;
+  background-color: #edf6f9;
   height: 400px;
   margin: 20px;
   border-radius: 1rem;
+  border: #006d77 2px solid;
 }
 
 main#portfoliopage div.short {
-  width: 27vw;
+  width: 26vw;
 }
 
 main#portfoliopage div.long {
-  width: 56vw;
+  width: 54.3vw;
 }
 
 /*Bio*/
