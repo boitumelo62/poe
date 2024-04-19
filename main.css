@@ -233,3 +233,97 @@ main#bio section img {
   width: 8%;
   margin: 0 10px;
 }
+
+@media (max-width: 768px) {
+  /*home*/
+
+  main#home {
+    height: 90vh;
+    overflow-y: none;
+    scroll-snap-type: none;
+  }
+
+  main#home section {
+    padding-top: 0px;
+    height: 100vh;
+    width: 88%;
+  }
+
+  main#home section.landing {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    button {
+      font-size: 1rem;
+      height: 50px;
+      width: 150px;
+    }
+  }
+
+  main#home section.about {
+    height: 88%;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      width: 30vh;
+    }
+  }
+
+  main#home section.why {
+    height: 88%;
+
+    h1 {
+      font-size: 2rem;
+      padding-top: 0;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      width: 100%;
+    }
+  }
+
+  main#home section.closing {
+    gap: 1rem;
+    height: 88%;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 1rem;
+    }
+    button {
+      font-size: 1rem;
+      height: 50px;
+      width: 150px;
+
+      &#top {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
