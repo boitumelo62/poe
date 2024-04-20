@@ -57,10 +57,7 @@ div.contacts span img {
 /*home*/
 
 main#home {
-  /*background-image: url("images/background.png");
-  background-size: 100%;
-  background-position: center;*/
-  height: 100vh;
+  height: 90vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -69,7 +66,6 @@ main#home {
 main#home section {
   height: 100vh;
   width: 88%;
-  padding-top: 55px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -188,11 +184,74 @@ main#portfoliopage {
 }
 
 main#portfoliopage div {
-  background-color: #edf6f9;
+  background-color: #ffffff;
   height: 400px;
   margin: 20px;
   border-radius: 1rem;
   border: #006d77 2px solid;
+  background-size: origin;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &#limedog {
+    background-image: url(images/content/main_logos/limedog.png);
+    border: #182b1c 2px solid;
+  }
+
+  &#sunshine_tours {
+    background-image: url(images/content/main_logos/sunshine_tours.png);
+    border: #f89d24 2px solid;
+  }
+
+  &#izitshalo {
+    background-image: url(images/content/main_logos/izitshalo.png);
+    border: #71a642 2px solid;
+  }
+
+  &#mellow {
+    background-image: url(images/content/main_logos/mellow.png);
+    border: #1c63ac 2px solid;
+  }
+
+  &#tag_markers {
+    background-image: url(images/content/main_logos/tag_markers.png);
+    border: #f4831f 2px solid;
+  }
+
+  &#cuts_clips {
+    background-image: url(images/content/main_logos/cuts_clips.png);
+    border: #3d6e72 2px solid;
+  }
+
+  &#aetheros {
+    background-image: url(images/content/main_logos/aetheros.png);
+    border: #ce8966 2px solid;
+  }
+
+  &#namastay {
+    background-image: url(images/content/main_logos/namastay.png);
+    border: #183932 2px solid;
+  }
+
+  &#rebel_radiance {
+    background-image: url(images/content/main_logos/rebel_radiance.png);
+    border: #2f3e46 2px solid;
+  }
+
+  &#d_inspo {
+    background-image: url(images/content/main_logos/d_inspo.png);
+    border: #8f1a1e 2px solid;
+  }
+
+  &#grit {
+    background-image: url(images/content/main_logos/grit.png);
+    border: #f2dbc2 2px solid;
+  }
+
+  &#nemisa {
+    background-image: url(images/content/main_logos/nemisa.png);
+    border: #f79720 2px solid;
+  }
 }
 
 main#portfoliopage div.short {
