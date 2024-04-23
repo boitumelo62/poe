@@ -252,6 +252,31 @@ main#portfoliopage div {
     background-image: url(images/content/main_logos/nemisa.png);
     border: #f79720 2px solid;
   }
+
+  &#sjf {
+    background-image: url(images/content/main_logos/sjf.png);
+    border: #ec1775 2px solid;
+  }
+
+  &#shutter_speed {
+    background-image: url(images/content/main_logos/shutter_speed.png);
+    border: #ee5528 2px solid;
+  }
+
+  &#inequality {
+    background-image: url(images/content/main_logos/inequality.png);
+    border: #bb2227 2px solid;
+  }
+
+  &#ancient_egypt {
+    background-image: url(images/content/main_logos/ancient_egypt.png);
+    border: #69a09b 2px solid;
+  }
+
+  &#global_goals {
+    background-image: url(images/content/main_logos/global_goals.png);
+    border: #f7bf14 2px solid;
+  }
 }
 
 main#portfoliopage div.short {
