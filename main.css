@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  padding-top: 55px;
+  /*padding-top: 55px;*/
 }
 
 /*Header*/
@@ -74,7 +74,6 @@ main#home section {
 }
 
 main#home section.landing {
-  display: flex;
   flex-direction: column;
   text-align: center;
   gap: 1.5rem;
@@ -113,30 +112,32 @@ main#home section.about {
 
   p {
     font-size: 2rem;
+    width: 46vw;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
 main#home section.why {
-  display: grid;
-  grid-template-rows: 4rem auto;
-  margin: auto;
+  flex-direction: column;
 
   h1 {
     font-size: 4rem;
-    padding-top: 275px;
     text-align: center;
   }
 
   div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 0 50px;
+    margin: 0;
   }
 
   p {
     font-size: 2rem;
-    width: 770px;
   }
 
   em {
@@ -146,13 +147,13 @@ main#home section.why {
 }
 
 main#home section.closing {
-  display: flex;
   flex-direction: column;
   text-align: center;
   gap: 1.5rem;
 
   h3 {
     font-size: 2rem;
+    width: 95%;
   }
 
   em {
@@ -169,6 +170,7 @@ main#home section.closing {
     height: 60px;
     width: 200px;
     margin: 0 20px;
+    cursor: pointer;
   }
 }
 
@@ -335,9 +337,6 @@ main#bio section img {
 
   main#home section.landing {
     height: 90vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     gap: 1rem;
 
     h1 {
@@ -378,12 +377,20 @@ main#bio section img {
   }
 
   main#home section.why {
+    display: grid;
+    grid-template-rows: auto;
     height: 88%;
 
     h1 {
       font-size: 2rem;
       padding-top: 0;
       text-align: center;
+    }
+
+    div {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 0;
     }
 
     p {
