@@ -31,7 +31,7 @@ div.logo img {
 
 div.contacts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 div.contacts p {
@@ -320,7 +320,7 @@ main#bio section img {
   margin: 0 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 910px) {
   /*home*/
 
   main#home {
