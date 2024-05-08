@@ -1,24 +1,42 @@
-/*Header*/
+@import url("https://use.typekit.net/yip1fwo.css");
 
+/*general*/
+
+body {
+  background-color: #edf6f9;
+  font-family: "Como", Arial, Helvetica, sans-serif;
+}
+
+main {
+  /*padding-top: 55px;*/
+}
+
+/*Header*/
 header {
-  background-color: rgb(255, 255, 255);
+  background-color: #edf6f9;
   height: 60px;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 7fr 1fr auto;
+  grid-template-columns: 7fr 0.8fr;
   position: fixed;
   left: 0;
   top: 0;
+  border-bottom: #006d77 2px solid;
+}
+
+div.logo img {
+  height: 2rem;
+  margin: 15px 15px 0px 25px;
 }
 
 div.contacts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 div.contacts p {
-  text-align: right;
-  width: fit-content;
-  margin: 20px 15px;
+  display: flex;
+  margin: 20px 10px;
 }
 
 header a {
@@ -26,52 +44,216 @@ header a {
   color: black;
 }
 
-div.socials {
+div.contacts span {
   display: flex;
-  flex-direction: row;
-  margin: 19px 0;
-  margin-left: 5px;
+  gap: 1rem;
+  margin: 18px 10px;
 }
 
-div.socials a img {
+div.contacts span img {
   width: 1.4rem;
-  margin-right: 18px;
 }
 
-main {
-  padding-top: 55px;
+/*home*/
+
+main#home {
+  height: 90vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
-/*about*/
-
-main#about {
-  display: grid;
-  grid-template-columns: 4fr 4fr;
-  gap: 3%;
-  width: 80%;
-  margin: 10px auto;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main#about img#profile {
-  width: 90%;
-  margin: auto 5%;
-  border-radius: 5%;
-}
-
-main#about div.hello {
-  margin: 14% 0;
-}
-
-main#about section {
-  display: flex;
-  flex-direction: row;
+main#home section {
+  height: 100vh;
+  width: 88%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
 }
 
-main#about section img {
-  width: 8%;
-  margin: 0 10px;
+main#home section.landing {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  em {
+    font-style: normal;
+    color: #e29578;
+  }
+
+  button {
+    background-color: #006d77;
+    color: #edf6f9;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    height: 60px;
+    width: 200px;
+  }
+}
+
+main#home section.about {
+  justify-content: space-between;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+    width: 46vw;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+main#home section.projects {
+  display: grid;
+  grid-template-rows: 10vh 60vh;
+  height: 100vh;
+  place-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+
+  & h2 {
+    font-size: 2rem;
+  }
+}
+
+main#home section section.latest {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 20px;
+
+  & div {
+    background-color: #edf6f9;
+    height: 55vh;
+    width: 60vw;
+    border-radius: 1rem;
+    border: #006d77 2px solid;
+  }
+
+  & div.latest {
+    background-size: calc(100% - 20px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/content/main_logos/grit.png);
+    border: #f2dbc2 2px solid;
+  }
+}
+
+main#home section section.archive {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: right;
+
+  & div {
+    background-color: #edf6f9;
+    height: 15vh;
+    width: 20vh;
+    background-size: calc(100% - 20px);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  & div.top {
+    background-image: url(images/content/main_logos/izitshalo.png);
+    border: #71a642 2px solid;
+  }
+
+  & div.mid {
+    background-image: url(images/content/main_logos/aetheros.png);
+    border: #ce8966 2px solid;
+  }
+
+  & div.bot {
+    background-image: url(images/content/main_logos/inequality.png);
+    border: #bb2227 2px solid;
+  }
+
+  & h4 {
+    margin: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 1.5rem;
+
+    & a {
+      text-decoration: none;
+      color: #006d77;
+    }
+  }
+}
+
+main#home section.why {
+  flex-direction: column;
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 0 50px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  em {
+    font-style: normal;
+    color: #e29578;
+  }
+}
+
+main#home section.closing {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+
+  h3 {
+    font-size: 2rem;
+    width: 95%;
+  }
+
+  em {
+    font-style: normal;
+    color: #e29578;
+  }
+
+  button {
+    background-color: #006d77;
+    color: #edf6f9;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    height: 60px;
+    width: 200px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
 }
 
 /*Portfolio*/
@@ -191,5 +373,122 @@ main#portfoliopage div {
   &#global_goals {
     background-image: url(images/content/main_logos/global_goals.png);
     border: #f7bf14 2px solid;
+  }
+}
+
+@media (max-width: 910px) {
+  /*home*/
+
+  main#home {
+    height: 90vh;
+    overflow-y: none;
+    scroll-snap-type: none;
+  }
+
+  main#home section {
+    padding-top: 0px;
+    height: 100vh;
+    width: 88%;
+  }
+
+  main#home section.landing {
+    height: 90vh;
+    gap: 1rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    button {
+      font-size: 1rem;
+      height: 50px;
+      width: 150px;
+    }
+  }
+
+  main#home section.about {
+    height: 88%;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      width: 88vw;
+    }
+
+    img {
+      width: 30vh;
+    }
+  }
+
+  main#home section.why {
+    display: grid;
+    grid-template-rows: auto;
+    height: 88%;
+
+    h1 {
+      font-size: 2rem;
+      padding-top: 0;
+      text-align: center;
+    }
+
+    div {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 0;
+    }
+
+    p {
+      font-size: 1rem;
+      width: 100%;
+    }
+  }
+
+  main#home section.projects {
+    height: 88vh;
+    place-items: center;
+  }
+
+  main#home section section.latest {
+    grid-template-columns: 1fr;
+  }
+
+  main#home section section.archive div {
+    display: none;
+  }
+
+  main#home section section.archive h4 {
+    text-align: center;
+  }
+
+  main#home section.closing {
+    gap: 1rem;
+    height: 88%;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 1rem;
+    }
+    button {
+      font-size: 1rem;
+      height: 50px;
+      width: 150px;
+
+      &#top {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
