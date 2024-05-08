@@ -103,4 +103,89 @@ main#portfoliopage div {
   border-radius: 1rem;
   border: #006d77 2px solid;
   display: block;
+
+  &#limedog {
+    background-image: url(images/content/main_logos/limedog.png);
+    border: #182b1c 2px solid;
+  }
+
+  &#sunshine_tours {
+    background-image: url(images/content/main_logos/sunshine_tours.png);
+    border: #f89d24 2px solid;
+  }
+
+  &#izitshalo {
+    background-image: url(images/content/main_logos/izitshalo.png);
+    border: #71a642 2px solid;
+  }
+
+  &#mellow {
+    background-image: url(images/content/main_logos/mellow.png);
+    border: #1c63ac 2px solid;
+  }
+
+  &#tag_markers {
+    background-image: url(images/content/main_logos/tag_markers.png);
+    border: #f4831f 2px solid;
+  }
+
+  &#cuts_clips {
+    background-image: url(images/content/main_logos/cuts_clips.png);
+    border: #3d6e72 2px solid;
+  }
+
+  &#aetheros {
+    background-image: url(images/content/main_logos/aetheros.png);
+    border: #ce8966 2px solid;
+  }
+
+  &#namastay {
+    background-image: url(images/content/main_logos/namastay.png);
+    border: #183932 2px solid;
+  }
+
+  &#rebel_radiance {
+    background-image: url(images/content/main_logos/rebel_radiance.png);
+    border: #2f3e46 2px solid;
+  }
+
+  &#d_inspo {
+    background-image: url(images/content/main_logos/d_inspo.png);
+    border: #8f1a1e 2px solid;
+  }
+
+  &#grit {
+    background-image: url(images/content/main_logos/grit.png);
+    border: #f2dbc2 2px solid;
+  }
+
+  &#nemisa {
+    background-image: url(images/content/main_logos/nemisa.png);
+    border: #f79720 2px solid;
+  }
+
+  &#sjf {
+    background-image: url(images/content/main_logos/sjf.png);
+    border: #ec1775 2px solid;
+  }
+
+  &#shutter_speed {
+    background-image: url(images/content/main_logos/shutter_speed.png);
+    border: #ee5528 2px solid;
+  }
+
+  &#inequality {
+    background-image: url(images/content/main_logos/inequality.png);
+    border: #bb2227 2px solid;
+  }
+
+  &#ancient_egypt {
+    background-image: url(images/content/main_logos/ancient_egypt.png);
+    border: #69a09b 2px solid;
+  }
+
+  &#global_goals {
+    background-image: url(images/content/main_logos/global_goals.png);
+    border: #f7bf14 2px solid;
+  }
 }
