@@ -77,6 +77,7 @@ main#about section img {
 /*Portfolio*/
 
 main#portfoliopage {
+  height: 100%;
   width: 88%;
   margin: 0 auto;
   text-align: center;
@@ -88,7 +89,7 @@ main#portfoliopage h2 {
   font-size: 5rem;
 
   & img {
-    height: 6rem;
+    width: 30vw;
   }
 }
 
@@ -98,7 +99,7 @@ main#portfoliopage section {
 main#portfoliopage div {
   background-color: #edf6f9;
   height: 44vh;
-  width: 60vw;
+  width: 66vw;
   margin: 0 auto 1rem auto;
   border-radius: 1rem;
   border: #006d77 2px solid;
