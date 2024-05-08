@@ -103,6 +103,9 @@ main#portfoliopage div {
   border-radius: 1rem;
   border: #006d77 2px solid;
   display: block;
+  background-size: origin;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &#limedog {
     background-image: url(images/content/main_logos/limedog.png);
