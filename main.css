@@ -3,11 +3,11 @@
 /*general*/
 
 body {
-  background-color: #edf6f9;
   font-family: "Como", Arial, Helvetica, sans-serif;
 }
 
 main {
+  background-color: #edf6f9;
   /*padding-top: 55px;*/
 }
 
@@ -276,6 +276,7 @@ main#portfoliopage h2 {
 }
 
 main#portfoliopage section {
+  background-color: #006d77;
 }
 
 main#portfoliopage div {
