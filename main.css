@@ -272,12 +272,12 @@ main#portfoliopage h2 {
   font-size: 5rem;
 
   & img {
-    width: 30vw;
+    width: 25vw;
   }
 }
 
 main#portfoliopage section {
-  background-color: #006d77;
+  background-color: #edf6f9;
 }
 
 main#portfoliopage div {
