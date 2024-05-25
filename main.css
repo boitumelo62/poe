@@ -146,8 +146,8 @@ main#home section section.latest {
     background-color: #edf6f9;
     height: 55vh;
     width: 60vw;
-    border-radius: 1rem;
     border: #006d77 2px solid;
+    border-radius: 1rem;
   }
 
   & div.latest {
@@ -155,7 +155,6 @@ main#home section section.latest {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(images/content/main_logos/grit.png);
-    border: #f2dbc2 2px solid;
   }
 }
 
@@ -173,21 +172,20 @@ main#home section section.archive {
     background-size: calc(100% - 20px);
     background-repeat: no-repeat;
     background-position: center;
+    border: #006d77 2px solid;
+    border-radius: 1rem;
   }
 
   & div.top {
     background-image: url(images/content/main_logos/izitshalo.png);
-    border: #71a642 2px solid;
   }
 
   & div.mid {
     background-image: url(images/content/main_logos/aetheros.png);
-    border: #ce8966 2px solid;
   }
 
   & div.bot {
-    background-image: url(images/content/main_logos/inequality.png);
-    border: #bb2227 2px solid;
+    background-image: url(images/content/main_logos/limedog.png);
   }
 
   & h4 {
@@ -260,122 +258,98 @@ main#home section.closing {
 /*Portfolio*/
 
 main#portfoliopage {
-  height: 100%;
   width: 88%;
   margin: 0 auto;
   text-align: center;
-  scroll-snap-align: start;
+  padding-top: 100px;
 }
 
-main#portfoliopage h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 5rem;
-
-  & img {
-    width: 25vw;
-  }
-}
-
-main#portfoliopage section {
-  background-color: #edf6f9;
-}
-
-main#portfoliopage div {
+main#portfoliopage div#limedog {
   background-color: #edf6f9;
   height: 44vh;
-  width: 66vw;
-  margin: 0 auto 1rem auto;
+  width: 60vw;
+  margin: 0 auto;
   border-radius: 1rem;
-  border: #006d77 2px solid;
   display: block;
   background-size: origin;
   background-repeat: no-repeat;
   background-position: center;
+  border: #006d77 2px solid;
+}
 
+main#portfoliopage section {
+  padding-bottom: 20px;
+  width: 70vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: column;
+  border: #006d77 2px solid;
+  border-radius: 1rem;
+  scrollbar-width: 400px #006d77 10px auto;
+  scrollbar-color: #edf6f9 #006d77;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  overflow-x: auto;
+  gap: 1vw;
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;*/
+}
+
+main#portfoliopage section div {
+  display: block;
+  height: 30vh;
+  width: 30vh;
+  background-size: origin;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div {
   &#limedog {
     background-image: url(images/content/main_logos/limedog.png);
-    border: #182b1c 2px solid;
   }
 
   &#sunshine_tours {
     background-image: url(images/content/main_logos/sunshine_tours.png);
-    border: #f89d24 2px solid;
   }
 
   &#izitshalo {
     background-image: url(images/content/main_logos/izitshalo.png);
-    border: #71a642 2px solid;
   }
 
   &#mellow {
     background-image: url(images/content/main_logos/mellow.png);
-    border: #1c63ac 2px solid;
   }
 
   &#tag_markers {
     background-image: url(images/content/main_logos/tag_markers.png);
-    border: #f4831f 2px solid;
   }
-
-  &#cuts_clips {
-    background-image: url(images/content/main_logos/cuts_clips.png);
-    border: #3d6e72 2px solid;
-  }
-
   &#aetheros {
     background-image: url(images/content/main_logos/aetheros.png);
-    border: #ce8966 2px solid;
   }
 
   &#namastay {
     background-image: url(images/content/main_logos/namastay.png);
-    border: #183932 2px solid;
   }
 
   &#rebel_radiance {
     background-image: url(images/content/main_logos/rebel_radiance.png);
-    border: #2f3e46 2px solid;
-  }
-
-  &#d_inspo {
-    background-image: url(images/content/main_logos/d_inspo.png);
-    border: #8f1a1e 2px solid;
   }
 
   &#grit {
     background-image: url(images/content/main_logos/grit.png);
-    border: #f2dbc2 2px solid;
-  }
-
-  &#nemisa {
-    background-image: url(images/content/main_logos/nemisa.png);
-    border: #f79720 2px solid;
-  }
-
-  &#sjf {
-    background-image: url(images/content/main_logos/sjf.png);
-    border: #ec1775 2px solid;
   }
 
   &#shutter_speed {
     background-image: url(images/content/main_logos/shutter_speed.png);
-    border: #ee5528 2px solid;
   }
+}
 
-  &#inequality {
-    background-image: url(images/content/main_logos/inequality.png);
-    border: #bb2227 2px solid;
-  }
-
-  &#ancient_egypt {
-    background-image: url(images/content/main_logos/ancient_egypt.png);
-    border: #69a09b 2px solid;
-  }
-
-  &#global_goals {
-    background-image: url(images/content/main_logos/global_goals.png);
-    border: #f7bf14 2px solid;
-  }
+main#portfoliopage div:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 910px) {
