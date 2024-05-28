@@ -360,12 +360,12 @@ main#portfoliopage div#izitshalo {
   color: black;
 
   & span h2 {
-    background-color: #edf6f9;
+    background-color: #edf6f9e0;
     width: fit-content;
   }
 
   & p {
-    background-color: #edf6f9;
+    background-color: #edf6f9e0;
   }
 }
 
@@ -373,12 +373,12 @@ main#portfoliopage div#mellow {
   color: black;
 
   & span h2 {
-    background-color: #edf6f9;
+    background-color: #edf6f9e0;
     width: fit-content;
   }
 
   & p {
-    background-color: #edf6f9;
+    background-color: #edf6f9e0;
   }
 }
 
@@ -386,12 +386,25 @@ main#portfoliopage div#tag_markers {
   color: black;
 
   & span h2 {
-    background-color: #edf6f9;
+    background-color: #edf6f9e0;
     width: fit-content;
   }
 
   & p {
-    background-color: #edf6f9;
+    background-color: #edf6f9e0;
+  }
+}
+
+main#portfoliopage div#namastay {
+  color: black;
+
+  & span h2 {
+    background-color: #edf6f9e0;
+    width: fit-content;
+  }
+
+  & p {
+    background-color: #edf6f9e0;
   }
 }
 
@@ -450,7 +463,7 @@ div {
   }
 
   &#namastay {
-    background-image: url(images/content/main_logos/namastay.png);
+    background-image: url(images/content/main_logos/namastay_cover.png);
   }
 
   &#rebel_radiance {
