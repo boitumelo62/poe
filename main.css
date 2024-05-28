@@ -65,6 +65,33 @@ main#home {
   scroll-snap-type: y mandatory;
 }
 
+main#home button {
+  background-color: #006d77;
+  color: #edf6f9;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  height: 60px;
+  width: 200px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #edf6f9;
+    color: #006d77;
+    border: 1px solid #006d77;
+  }
+
+  &:active {
+    background-color: #006d77;
+    color: #edf6f9;
+  }
+
+  & a {
+    color: #edf6f9;
+    text-decoration: none;
+  }
+}
+
 main#home section {
   height: 100vh;
   width: 88%;
@@ -92,16 +119,6 @@ main#home section.landing {
   em {
     font-style: normal;
     color: #e29578;
-  }
-
-  button {
-    background-color: #006d77;
-    color: #edf6f9;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.3rem;
-    height: 60px;
-    width: 200px;
   }
 }
 
@@ -202,32 +219,6 @@ main#home section section.archive {
   }
 }
 
-main#home section.why {
-  flex-direction: column;
-
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    gap: 0 50px;
-    margin: 0;
-  }
-
-  p {
-    font-size: 2rem;
-  }
-
-  em {
-    font-style: normal;
-    color: #e29578;
-  }
-}
-
 main#home section.closing {
   flex-direction: column;
   text-align: center;
@@ -244,15 +235,7 @@ main#home section.closing {
   }
 
   button {
-    background-color: #006d77;
-    color: #edf6f9;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.3rem;
-    height: 60px;
-    width: 200px;
     margin: 0 20px;
-    cursor: pointer;
   }
 }
 
@@ -294,7 +277,7 @@ main#portfoliopage div {
     display: grid;
     background-position-x: left;
     background-size: cover;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.7s ease-in-out;
 
     & span {
       margin: 20px;
@@ -354,7 +337,8 @@ main#portfoliopage div {
     left: 20vw;
     width: 60vw;
   }
-}*/
+}
+*/
 
 main#portfoliopage div#izitshalo {
   color: black;
@@ -540,29 +524,6 @@ div {
     }
   }
 
-  main#home section.why {
-    display: grid;
-    grid-template-rows: auto;
-    height: 88%;
-
-    h1 {
-      font-size: 2rem;
-      padding-top: 0;
-      text-align: center;
-    }
-
-    div {
-      display: grid;
-      grid-template-columns: 100%;
-      gap: 0;
-    }
-
-    p {
-      font-size: 1rem;
-      width: 100%;
-    }
-  }
-
   main#home section.projects {
     height: 88vh;
     place-items: center;
@@ -570,6 +531,10 @@ div {
 
   main#home section section.latest {
     grid-template-columns: 1fr;
+
+    & div {
+      background-image: url(images/content/main_logos/grit_cover.png);
+    }
   }
 
   main#home section section.archive div {
