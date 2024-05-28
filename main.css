@@ -38,6 +38,7 @@ div.contacts {
 div.contacts p {
   display: flex;
   margin: 20px 10px;
+  font-style: bold;
 }
 
 header a {
@@ -146,15 +147,15 @@ main#home section section.latest {
     background-color: #edf6f9;
     height: 55vh;
     width: 60vw;
-    border: #006d77 2px solid;
+
     border-radius: 1rem;
   }
 
   & div.latest {
-    background-size: calc(100% - 20px);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(images/content/main_logos/grit.png);
+    background-position: left;
+    background-image: url(images/content/main_logos/grit_cover.png);
   }
 }
 
@@ -169,15 +170,15 @@ main#home section section.archive {
     background-color: #edf6f9;
     height: 15vh;
     width: 20vh;
-    background-size: calc(100% - 20px);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    border: #006d77 2px solid;
+
     border-radius: 1rem;
   }
 
   & div.top {
-    background-image: url(images/content/main_logos/izitshalo.png);
+    background-image: url(images/content/main_logos/izitshalo_thumb.png);
   }
 
   & div.mid {
@@ -185,7 +186,7 @@ main#home section section.archive {
   }
 
   & div.bot {
-    background-image: url(images/content/main_logos/limedog.png);
+    background-image: url(images/content/main_logos/limedog_thumb.png);
   }
 
   & h4 {
@@ -262,9 +263,11 @@ main#portfoliopage {
   margin: 0 auto;
   text-align: center;
   padding-top: 100px;
+  display: grid;
+  gap: 40px;
 }
 
-main#portfoliopage div#limedog {
+main#portfoliopage div {
   background-color: #edf6f9;
   height: 44vh;
   width: 60vw;
@@ -274,17 +277,132 @@ main#portfoliopage div#limedog {
   background-size: origin;
   background-repeat: no-repeat;
   background-position: center;
-  border: #006d77 2px solid;
+  color: #edf6f9;
+  place-content: end;
+  display: grid;
+  text-align: left;
 }
 
-main#portfoliopage section {
+main#portfoliopage div {
+  &:not(:hover) {
+    & span {
+      display: none;
+    }
+  }
+
+  &:hover {
+    display: grid;
+    background-position-x: left;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+
+    & span {
+      margin: 20px;
+
+      & p {
+        width: 35%;
+      }
+
+      & button {
+        background-color: #006d77;
+        color: #edf6f9;
+        border: none;
+        border-radius: 1rem;
+        font-size: 1.1rem;
+        height: 50px;
+        width: 150px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #edf6f9;
+          color: #006d77;
+          border: 1px solid #006d77;
+        }
+
+        &:active {
+          background-color: #006d77;
+          color: #edf6f9;
+
+          & img {
+            display: grid;
+          }
+        }
+      }
+    }
+  }
+
+  & img {
+    display: none;
+    position: fixed;
+    top: 105px;
+    left: 15vw;
+    width: 70vw;
+  }
+}
+
+/*div#click {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #edf6f9;
+  width: 100vw;
+
+  & img {
+    display: grid;
+    position: fixed;
+    top: 105px;
+    left: 20vw;
+    width: 60vw;
+  }
+}*/
+
+main#portfoliopage div#izitshalo {
+  color: black;
+
+  & span h2 {
+    background-color: #edf6f9;
+    width: fit-content;
+  }
+
+  & p {
+    background-color: #edf6f9;
+  }
+}
+
+main#portfoliopage div#mellow {
+  color: black;
+
+  & span h2 {
+    background-color: #edf6f9;
+    width: fit-content;
+  }
+
+  & p {
+    background-color: #edf6f9;
+  }
+}
+
+main#portfoliopage div#tag_markers {
+  color: black;
+
+  & span h2 {
+    background-color: #edf6f9;
+    width: fit-content;
+  }
+
+  & p {
+    background-color: #edf6f9;
+  }
+}
+
+/*main#portfoliopage section {
   padding-bottom: 20px;
   width: 70vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-flow: column;
-  border: #006d77 2px solid;
+
   border-radius: 1rem;
   scrollbar-width: 400px #006d77 10px auto;
   scrollbar-color: #edf6f9 #006d77;
@@ -295,37 +413,37 @@ main#portfoliopage section {
   /*display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow: hidden;*/
+  overflow: hidden;
 }
 
 main#portfoliopage section div {
   display: block;
   height: 30vh;
   width: 30vh;
-  background-size: origin;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
+}*/
 
 div {
   &#limedog {
-    background-image: url(images/content/main_logos/limedog.png);
+    background-image: url(images/content/main_logos/limedog_cover.png);
   }
 
   &#sunshine_tours {
-    background-image: url(images/content/main_logos/sunshine_tours.png);
+    background-image: url(images/content/main_logos/sunshine_tours_cover.png);
   }
 
   &#izitshalo {
-    background-image: url(images/content/main_logos/izitshalo.png);
+    background-image: url(images/content/main_logos/izitshalo_cover.png);
   }
 
   &#mellow {
-    background-image: url(images/content/main_logos/mellow.png);
+    background-image: url(images/content/main_logos/mellow_cover.png);
   }
 
   &#tag_markers {
-    background-image: url(images/content/main_logos/tag_markers.png);
+    background-image: url(images/content/main_logos/tag_markers_cover.png);
   }
   &#aetheros {
     background-image: url(images/content/main_logos/aetheros.png);
@@ -340,17 +458,17 @@ div {
   }
 
   &#grit {
-    background-image: url(images/content/main_logos/grit.png);
+    background-image: url(images/content/main_logos/grit_cover.png);
   }
 
   &#shutter_speed {
-    background-image: url(images/content/main_logos/shutter_speed.png);
+    background-image: url(images/content/main_logos/shutter_speed_cover.png);
   }
 }
 
-main#portfoliopage div:hover {
+/*main#portfoliopage div:hover {
   cursor: pointer;
-}
+}*/
 
 @media (max-width: 910px) {
   /*home*/
