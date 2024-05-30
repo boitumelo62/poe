@@ -12,6 +12,11 @@ main {
   /*padding-top: 55px;*/
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 /*Header*/
 header {
   background-color: #edf6f9;
@@ -39,11 +44,6 @@ div.contacts p {
   display: flex;
   margin: 20px 10px;
   font-style: bold;
-}
-
-header a {
-  text-decoration: none;
-  color: black;
 }
 
 div.contacts span {
@@ -250,7 +250,7 @@ main#portfoliopage {
   gap: 40px;
 }
 
-main#portfoliopage div {
+main#portfoliopage div.short {
   background-color: #edf6f9;
   height: 44vh;
   width: 60vw;
@@ -266,7 +266,7 @@ main#portfoliopage div {
   text-align: left;
 }
 
-main#portfoliopage div {
+main#portfoliopage div.short {
   &:not(:hover) {
     & span {
       display: none;
@@ -305,10 +305,6 @@ main#portfoliopage div {
         &:active {
           background-color: #006d77;
           color: #edf6f9;
-
-          & img {
-            display: grid;
-          }
         }
       }
     }
@@ -321,6 +317,36 @@ main#portfoliopage div {
     left: 15vw;
     width: 70vw;
   }
+}
+
+/*Image viewer */
+.image-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: control;
+  z-index: 100;
+}
+
+.image-viewer img {
+  padding-top: 100px;
+  width: 75%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+}
+
+.image-viewer h1 {
+  position: fixed;
+  top: 10vh;
+  right: 5vw;
+  color: #edf6f9;
+  cursor: pointer;
 }
 
 /*div#click {
@@ -341,54 +367,46 @@ main#portfoliopage div {
 */
 
 main#portfoliopage div#izitshalo {
-  color: black;
-
   & span h2 {
-    background-color: #edf6f9e0;
+    background-color: #000000be;
     width: fit-content;
   }
 
   & p {
-    background-color: #edf6f9e0;
+    background-color: #000000be;
   }
 }
 
 main#portfoliopage div#mellow {
-  color: black;
-
   & span h2 {
-    background-color: #edf6f9e0;
+    background-color: #000000be;
     width: fit-content;
   }
 
   & p {
-    background-color: #edf6f9e0;
+    background-color: #000000be;
   }
 }
 
 main#portfoliopage div#tag_markers {
-  color: black;
-
   & span h2 {
-    background-color: #edf6f9e0;
+    background-color: #000000be;
     width: fit-content;
   }
 
   & p {
-    background-color: #edf6f9e0;
+    background-color: #000000be;
   }
 }
 
 main#portfoliopage div#namastay {
-  color: black;
-
   & span h2 {
-    background-color: #edf6f9e0;
+    background-color: #000000be;
     width: fit-content;
   }
 
   & p {
-    background-color: #edf6f9e0;
+    background-color: #000000be;
   }
 }
 
@@ -467,7 +485,7 @@ div {
   cursor: pointer;
 }*/
 
-@media (max-width: 910px) {
+@media (max-width: 710px) {
   /*home*/
 
   main#home {
@@ -505,7 +523,7 @@ div {
     height: 88%;
     justify-content: center;
     place-items: center;
-    text-align: center;
+    text-align: left;
     display: grid;
     grid-template-rows: 1fr 1fr;
 
@@ -515,7 +533,7 @@ div {
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       width: 88vw;
     }
 
@@ -562,5 +580,66 @@ div {
         margin-bottom: 1rem;
       }
     }
+  }
+
+  /*portfolio*/
+
+  main#portfoliopage div.short {
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  main#portfoliopage div.short {
+    &#limedog {
+      background-image: url(images/content/main_logos/limedog_thumb.png);
+    }
+
+    &#sunshine_tours {
+      background-image: url(images/content/main_logos/sunshine_tours_thumb.png);
+    }
+
+    &#izitshalo {
+      background-image: url(images/content/main_logos/izitshalo_thumb.png);
+    }
+
+    &#mellow {
+      background-image: url(images/content/main_logos/mellow_thumb.png);
+    }
+
+    &#tag_markers {
+      background-image: url(images/content/main_logos/tag_markers_thumb.png);
+    }
+    &#aetheros {
+      background-image: url(images/content/main_logos/aetheros.png);
+    }
+
+    &#namastay {
+      background-image: url(images/content/main_logos/namastay_thumb.png);
+    }
+
+    &#rebel_radiance {
+      background-image: url(images/content/main_logos/rebel_radiance.png);
+    }
+
+    &#grit {
+      background-image: url(images/content/main_logos/grit_thumb.png);
+    }
+
+    &#shutter_speed {
+      background-image: url(images/content/main_logos/shutter_speed_thumb.png);
+    }
+
+    & span {
+      display: none;
+    }
+  }
+
+  .image-viewer img {
+    width: 75vw;
+  }
+
+  .image-viewer h1 {
+    top: 9vh;
+    right: 4vw;
   }
 }
