@@ -198,7 +198,7 @@ main#home section section.archive {
   }
 
   & div.mid {
-    background-image: url(images/content/main_logos/aetheros.png);
+    background-image: url(images/content/main_logos/aetheros_thumb.png);
   }
 
   & div.bot {
@@ -393,6 +393,17 @@ main#portfoliopage div#namastay {
   }
 }
 
+main#portfoliopage div#rebel_radiance {
+  & span h2 {
+    background-color: #000000be;
+    width: fit-content;
+  }
+
+  & p {
+    background-color: #000000be;
+  }
+}
+
 div {
   &#limedog {
     background-image: url(images/content/main_logos/limedog_cover.png);
@@ -414,7 +425,7 @@ div {
     background-image: url(images/content/main_logos/tag_markers_cover.png);
   }
   &#aetheros {
-    background-image: url(images/content/main_logos/aetheros.png);
+    background-image: url(images/content/main_logos/aetheros_cover.png);
   }
 
   &#namastay {
@@ -422,7 +433,7 @@ div {
   }
 
   &#rebel_radiance {
-    background-image: url(images/content/main_logos/rebel_radiance.png);
+    background-image: url(images/content/main_logos/rabel_radiance_cover.png);
   }
 
   &#grit {
@@ -567,7 +578,7 @@ div {
     }
 
     &#rebel_radiance {
-      background-image: url(images/content/main_logos/rebel_radiance.png);
+      background-image: url(images/content/main_logos/rabel_radiance_thumb.png);
     }
 
     &#grit {
