@@ -9,7 +9,6 @@ body {
 
 main {
   background-color: #edf6f9;
-  /*padding-top: 55px;*/
 }
 
 a {
@@ -320,6 +319,7 @@ main#portfoliopage div.short {
 }
 
 /*Image viewer */
+
 .image-viewer {
   position: fixed;
   top: 0;
@@ -348,23 +348,6 @@ main#portfoliopage div.short {
   color: #edf6f9;
   cursor: pointer;
 }
-
-/*div#click {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: #edf6f9;
-  width: 100vw;
-
-  & img {
-    display: grid;
-    position: fixed;
-    top: 105px;
-    left: 20vw;
-    width: 60vw;
-  }
-}
-*/
 
 main#portfoliopage div#izitshalo {
   & span h2 {
@@ -410,36 +393,6 @@ main#portfoliopage div#namastay {
   }
 }
 
-/*main#portfoliopage section {
-  padding-bottom: 20px;
-  width: 70vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-flow: column;
-
-  border-radius: 1rem;
-  scrollbar-width: 400px #006d77 10px auto;
-  scrollbar-color: #edf6f9 #006d77;
-  scroll-behavior: smooth;
-  scrollbar-gutter: stable;
-  overflow-x: auto;
-  gap: 1vw;
-  /*display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-
-main#portfoliopage section div {
-  display: block;
-  height: 30vh;
-  width: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
-
 div {
   &#limedog {
     background-image: url(images/content/main_logos/limedog_cover.png);
@@ -480,10 +433,6 @@ div {
     background-image: url(images/content/main_logos/shutter_speed_cover.png);
   }
 }
-
-/*main#portfoliopage div:hover {
-  cursor: pointer;
-}*/
 
 @media (max-width: 710px) {
   /*home*/
