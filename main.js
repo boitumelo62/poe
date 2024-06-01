@@ -1,4 +1,4 @@
-const imageViewers = document.querySelectorAll(".short");
+const imageViewers = document.querySelectorAll(".short, .latest");
 const imageViewerContainer = document.querySelector(".image-viewer");
 const imageViewerImage = imageViewerContainer.querySelector("img");
 const h1 = imageViewerContainer.querySelector(".image-viewer h1");
@@ -23,6 +23,7 @@ imageViewers.forEach((button, index) => {
     imageViewerImage.src = imageData[index].src;
     imageViewerContainer.style.display = "block";
     currentIndex = index;
+    console.log(currentIndex);
   });
 });
 
