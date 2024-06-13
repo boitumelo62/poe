@@ -411,6 +411,70 @@ div {
   }
 }
 
+section.web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  & h2 {
+    margin: 0 auto;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 40px;
+    width: 60vw;
+    transition: all 1s ease-in-out;
+
+    & div {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      background-color: #000000;
+      margin: 0 auto;
+      border-radius: 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      span {
+        display: none;
+        color: #edf6f9;
+        background-color: #0000003d;
+        height: 100%;
+        border-radius: 1rem;
+        place-content: center;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        & span {
+          display: block;
+        }
+      }
+    }
+
+    & div.left {
+      background-image: url(images/content/main_logos/marvin.png);
+
+      &:hover {
+        background-size: 110%;
+      }
+    }
+
+    & div.center {
+      background-image: url(images/content/main_logos/el-cancionero.png);
+
+      &:hover {
+        background-size: 140%;
+      }
+    }
+  }
+}
+
 @media (max-width: 710px) {
   /*home*/
 
