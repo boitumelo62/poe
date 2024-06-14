@@ -143,6 +143,8 @@ main#home section.projects {
   grid-template-rows: 10vh 60vh;
   place-content: center;
   margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
 
   & h2 {
     font-size: 2rem;
@@ -221,7 +223,6 @@ main#portfoliopage div.short {
   width: 60vw;
   margin: 0 auto;
   border-radius: 1rem;
-  display: block;
   background-size: origin;
   background-repeat: no-repeat;
   background-position: center;
@@ -274,14 +275,151 @@ main#portfoliopage div.short {
       }
     }
   }
+}
 
-  & img {
-    display: none;
-    position: fixed;
-    top: 105px;
-    left: 15vw;
-    width: 70vw;
+main#portfoliopage div#izitshalo,
+main#portfoliopage div#jozi_foodie,
+main#portfoliopage div#mellow,
+main#portfoliopage div#tag_markers,
+main#portfoliopage div#namastay,
+main#portfoliopage div#aetheros,
+main#portfoliopage div#rebel_radiance {
+  & span h2 {
+    background-color: #0000006e;
+    width: fit-content;
   }
+
+  & p {
+    background-color: #0000006e;
+  }
+}
+
+div {
+  &#limedog {
+    background-image: url(images/content/main_logos/limedog_cover.png);
+  }
+
+  &#sunshine_tours {
+    background-image: url(images/content/main_logos/sunshine_tours_cover.png);
+  }
+
+  &#izitshalo {
+    background-image: url(images/content/main_logos/izitshalo_cover.png);
+  }
+
+  &#jozi_foodie {
+    background-image: url(images/content/main_logos/jozi_foodie_cover.png);
+  }
+
+  &#mellow {
+    background-image: url(images/content/main_logos/mellow_cover.png);
+  }
+
+  &#tag_markers {
+    background-image: url(images/content/main_logos/tag_markers_cover.png);
+  }
+
+  &#aetheros {
+    background-image: url(images/content/main_logos/aetheros_cover.png);
+  }
+
+  &#namastay {
+    background-image: url(images/content/main_logos/namastay_cover.png);
+  }
+
+  &#rebel_radiance {
+    background-image: url(images/content/main_logos/rabel_radiance_cover.png);
+  }
+
+  &#grit {
+    background-image: url(images/content/main_logos/grit_cover.png);
+  }
+
+  &#shutter_speed {
+    background-image: url(images/content/main_logos/shutter_speed_cover.png);
+  }
+}
+
+section.web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 60vw;
+  margin: 0 auto;
+
+  & h2 {
+    margin: 0 auto;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 40px;
+    width: 60vw;
+
+    & div {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      background-color: #000000;
+      margin: 0 auto;
+      border-radius: 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      span {
+        display: none;
+        color: #edf6f9;
+        background-color: #0000003d;
+        height: 100%;
+        border-radius: 1rem;
+        place-content: center;
+        transition: all 1s ease-in-out;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        & span {
+          display: block;
+        }
+      }
+    }
+
+    & div.left {
+      background-image: url(images/content/main_logos/marvin.png);
+
+      &:hover {
+        background-size: 110%;
+      }
+    }
+
+    & div.center {
+      background-image: url(images/content/main_logos/el-cancionero.png);
+
+      &:hover {
+        background-size: 140%;
+      }
+    }
+
+    & div.right {
+      background-image: url(images/content/main_logos/kasten.jpg);
+
+      &:hover {
+        background-size: 140%;
+      }
+    }
+  }
+}
+
+main#portfoliopage p.copy {
+  font-size: 1rem;
+  width: 60vw;
+  text-align: right;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 /*Image viewer */
@@ -313,166 +451,6 @@ main#portfoliopage div.short {
   right: 5vw;
   color: #edf6f9;
   cursor: pointer;
-}
-
-main#portfoliopage div#izitshalo {
-  & span h2 {
-    background-color: #000000be;
-    width: fit-content;
-  }
-
-  & p {
-    background-color: #000000be;
-  }
-}
-
-main#portfoliopage div#mellow {
-  & span h2 {
-    background-color: #000000be;
-    width: fit-content;
-  }
-
-  & p {
-    background-color: #000000be;
-  }
-}
-
-main#portfoliopage div#tag_markers {
-  & span h2 {
-    background-color: #000000be;
-    width: fit-content;
-  }
-
-  & p {
-    background-color: #000000be;
-  }
-}
-
-main#portfoliopage div#namastay {
-  & span h2 {
-    background-color: #000000be;
-    width: fit-content;
-  }
-
-  & p {
-    background-color: #000000be;
-  }
-}
-
-main#portfoliopage div#rebel_radiance {
-  & span h2 {
-    background-color: #000000be;
-    width: fit-content;
-  }
-
-  & p {
-    background-color: #000000be;
-  }
-}
-
-div {
-  &#limedog {
-    background-image: url(images/content/main_logos/limedog_cover.png);
-  }
-
-  &#sunshine_tours {
-    background-image: url(images/content/main_logos/sunshine_tours_cover.png);
-  }
-
-  &#izitshalo {
-    background-image: url(images/content/main_logos/izitshalo_cover.png);
-  }
-
-  &#mellow {
-    background-image: url(images/content/main_logos/mellow_cover.png);
-  }
-
-  &#tag_markers {
-    background-image: url(images/content/main_logos/tag_markers_cover.png);
-  }
-  &#aetheros {
-    background-image: url(images/content/main_logos/aetheros_cover.png);
-  }
-
-  &#namastay {
-    background-image: url(images/content/main_logos/namastay_cover.png);
-  }
-
-  &#rebel_radiance {
-    background-image: url(images/content/main_logos/rabel_radiance_cover.png);
-  }
-
-  &#grit {
-    background-image: url(images/content/main_logos/grit_cover.png);
-  }
-
-  &#shutter_speed {
-    background-image: url(images/content/main_logos/shutter_speed_cover.png);
-  }
-}
-
-section.web {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-
-  & h2 {
-    margin: 0 auto;
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 40px;
-    width: 60vw;
-    transition: all 1s ease-in-out;
-
-    & div {
-      width: 100%;
-      aspect-ratio: 3 / 2;
-      background-color: #000000;
-      margin: 0 auto;
-      border-radius: 1rem;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      span {
-        display: none;
-        color: #edf6f9;
-        background-color: #0000003d;
-        height: 100%;
-        border-radius: 1rem;
-        place-content: center;
-      }
-
-      &:hover {
-        cursor: pointer;
-
-        & span {
-          display: block;
-        }
-      }
-    }
-
-    & div.left {
-      background-image: url(images/content/main_logos/marvin.png);
-
-      &:hover {
-        background-size: 110%;
-      }
-    }
-
-    & div.center {
-      background-image: url(images/content/main_logos/el-cancionero.png);
-
-      &:hover {
-        background-size: 140%;
-      }
-    }
-  }
 }
 
 @media (max-width: 710px) {
@@ -541,7 +519,9 @@ section.web {
     grid-template-columns: 1fr;
 
     & div {
-      background-image: url(images/content/main_logos/grit_cover.png);
+      width: 80vw;
+      height: 40vh;
+      background-image: url(images/content/main_logos/grit_thumb.png);
     }
   }
 
@@ -577,6 +557,8 @@ section.web {
   main#portfoliopage div.short {
     background-size: cover;
     cursor: pointer;
+    width: 80vw;
+    height: 40vh;
   }
 
   main#portfoliopage div.short {
@@ -592,6 +574,10 @@ section.web {
       background-image: url(images/content/main_logos/izitshalo_thumb.png);
     }
 
+    &#jozi_foodie {
+      background-image: url(images/content/main_logos/jozi_foodie_thumb.png);
+    }
+
     &#mellow {
       background-image: url(images/content/main_logos/mellow_thumb.png);
     }
@@ -599,8 +585,9 @@ section.web {
     &#tag_markers {
       background-image: url(images/content/main_logos/tag_markers_thumb.png);
     }
+
     &#aetheros {
-      background-image: url(images/content/main_logos/aetheros.png);
+      background-image: url(images/content/main_logos/aetheros_thumb.png);
     }
 
     &#namastay {
@@ -631,5 +618,18 @@ section.web {
   .image-viewer h1 {
     top: 9vh;
     right: 4vw;
+  }
+
+  section.web {
+    width: 80vw;
+
+    & section {
+      width: 80vw;
+    }
+  }
+
+  main#portfoliopage p {
+    font-size: 0.8rem;
+    width: 80vw;
   }
 }

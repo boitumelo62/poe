@@ -7,6 +7,7 @@ const imageData = [
   { src: "images/content/subpages/limedog.png", alt: "Limedog" },
   { src: "images/content/subpages/sunshine_tours.png", alt: "Sunshine tours" },
   { src: "images/content/subpages/izitshalo.png", alt: "Izitshalo" },
+  { src: "images/content/subpages/jozi_foodie.png", alt: "Jozi Foodie" },
   { src: "images/content/subpages/mellow.png", alt: "Mellow" },
   { src: "images/content/subpages/namastay.png", alt: "Namastay" },
   { src: "images/content/subpages/grit.png", alt: "Grit" },
