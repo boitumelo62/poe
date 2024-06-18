@@ -287,10 +287,12 @@ main#portfoliopage div#rebel_radiance {
   & span h2 {
     background-color: #0000006e;
     width: fit-content;
+    padding: 5px;
   }
 
   & p {
     background-color: #0000006e;
+    padding: 10px;
   }
 }
 
