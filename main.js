@@ -48,3 +48,9 @@ imageViewerContainer.addEventListener("click", (e) => {
     imageViewerContainer.style.display = "none";
   }
 });
+
+function playVideo(url) {
+  const player = document.getElementById("vimeo-player");
+  const videoId = url.split("/").pop();
+  player.src = `https://player.vimeo.com/video/${videoId}`;
+}

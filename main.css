@@ -151,37 +151,50 @@ main#home section.projects {
   }
 }
 
-main#home section section.latest {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  align-items: start;
-  gap: 20px;
+main#home section.projects {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 
-  & div {
-    background-color: #edf6f9;
-    height: 55vh;
-    width: 60vw;
-    border-radius: 1rem;
-  }
-}
-
-main#home section section.archive {
-  height: 100%;
-  width: 100%;
-  flex-direction: row;
-  gap: 20px;
-
-  & h4 {
-    margin: 0;
+  & section.video {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
     width: 100%;
-    text-align: right;
-    font-size: 1.5rem;
+    gap: 20px;
 
-    & a {
-      text-decoration: none;
-      color: #006d77;
+    & div.video-container {
+      background-color: #006d77;
+      height: 60vh;
+      width: 50vw;
+    }
+
+    & div.video-list {
+      background-color: aqua;
+      align-content: start;
+      height: 60vh;
+
+      div {
+        background-color: #4d4c4c;
+        color: #edf6f9;
+        height: 23vh;
+        width: 40vh;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+
+      & h4 {
+        margin: 0;
+        text-align: right;
+        font-size: 1.5rem;
+
+        & a {
+          text-decoration: none;
+          color: #006d77;
+        }
+      }
     }
   }
 }
@@ -510,29 +523,6 @@ main#portfoliopage p.copy {
     img {
       width: 30vh;
     }
-  }
-
-  main#home section.projects {
-    height: 88vh;
-    place-items: center;
-  }
-
-  main#home section section.latest {
-    grid-template-columns: 1fr;
-
-    & div {
-      width: 80vw;
-      height: 40vh;
-      background-image: url(images/content/main_logos/grit_thumb.png);
-    }
-  }
-
-  main#home section section.archive div {
-    display: none;
-  }
-
-  main#home section section.archive h4 {
-    text-align: center;
   }
 
   main#home section.closing {

@@ -51,13 +51,27 @@
 
       <section class="projects">
         <h2>Show Reel</h2>
-        <section class="latest">
-          <div class="latest" id="grit">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Wx3xjoZsiak?si=AaMDoL5hbQt5F5CH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="video">
+          <div class="video-container">
+           <iframe
+              id="vimeo-player"
+              src="https://www.youtube.com/embed/Wx3xjoZsiak?si=AaMDoL5hbQt5F5CH"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+           ></iframe>
           </div>
-          <section class="archive">
+          <div class="video-list">
+            <div id="videoload" onclick="playVideo('https://vimeo.com/969845282')">
+              Play Video 1
+            </div>
+            <div id="videoload" onclick="playVideo('https://vimeo.com/126747807')">
+              Play Video 2
+            </div>
             <h4><a href="portfolio.html">Portfolio</a></h4>
-          </section>
+          </div>
         </section>
       </section>
 
