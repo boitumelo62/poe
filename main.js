@@ -1,7 +1,7 @@
 const imageViewers = document.querySelectorAll(".short");
 const imageViewerContainer = document.querySelector(".image-viewer");
 const imageViewerImage = imageViewerContainer.querySelector("img");
-const h1 = imageViewerContainer.querySelector(".image-viewer h1");
+const h1 = imageViewerContainer.querySelector(".image-viewer .x");
 let currentIndex = 0;
 const imageData = [
   { src: "images/content/subpages/limedog.png", alt: "Limedog" },
@@ -54,3 +54,29 @@ function playVideo(url) {
   const videoId = url.split("/").pop();
   player.src = `https://player.vimeo.com/video/${videoId}`;
 }
+
+const imageContainer = document.querySelector(".image-wrapper");
+const scrollUpButton = document.querySelector(".scroll-up");
+const scrollDownButton = document.querySelector(".scroll-down");
+
+let scrollInterval = null;
+
+scrollUpButton.addEventListener("mousedown", () => {
+  scrollInterval = setInterval(() => {
+    imageContainer.scrollTop -= 10; // adjust the scroll speed to your liking
+  }, 16); // 16ms = 60fps
+});
+
+scrollUpButton.addEventListener("mouseup", () => {
+  clearInterval(scrollInterval);
+});
+
+scrollDownButton.addEventListener("mousedown", () => {
+  scrollInterval = setInterval(() => {
+    imageContainer.scrollTop += 10; // adjust the scroll speed to your liking
+  }, 16); // 16ms = 60fps
+});
+
+scrollDownButton.addEventListener("mouseup", () => {
+  clearInterval(scrollInterval);
+});

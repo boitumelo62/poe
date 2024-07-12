@@ -447,25 +447,46 @@ main#portfoliopage p.copy {
   display: none;
   width: 100vw;
   height: 100vh;
-  overflow-y: auto;
-  scroll-behavior: control;
+  overflow: hidden;
   z-index: 100;
 }
 
-.image-viewer img {
-  padding-top: 100px;
-  width: 75%;
+.image-wrapper {
+  overflow: auto;
+  width: 99vw;
+  height: 100%;
+}
+
+.image-wrapper img {
+  width: 75vw;
   height: auto;
-  object-fit: contain;
   object-position: top;
+  margin: 0 auto;
+  padding: 100px 0 30px 0;
 }
 
 .image-viewer h1 {
   position: fixed;
-  top: 10vh;
   right: 5vw;
   color: #edf6f9;
   cursor: pointer;
+  border: none;
+
+  &:active {
+    color: #006d77;
+  }
+}
+
+.scroll-down {
+  top: 55vh;
+}
+
+.scroll-up {
+  top: 45vh;
+}
+
+.image-viewer h1.x {
+  top: 10vh;
 }
 
 @media (max-width: 710px) {
