@@ -169,6 +169,10 @@ main#home section.projects {
       height: 60vh;
       width: 60vw;
       border-radius: 1rem;
+
+      & iframe {
+        border-radius: 1rem;
+      }
     }
 
     & div.video-list {
