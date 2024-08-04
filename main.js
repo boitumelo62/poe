@@ -15,6 +15,7 @@ const imageData = [
   { src: "images/content/subpages/aetheros.png", alt: "Aetheros" },
   { src: "images/content/subpages/tag_markers.png", alt: "Tag Markers" },
   { src: "images/content/subpages/rabel_radiance.png", alt: "Rebel Radiance" },
+  { src: "images/content/subpages/upcycle.png", alt: "Upcycle" },
 ];
 const imageViewer = document.querySelector(".image-viewer");
 

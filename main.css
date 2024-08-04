@@ -396,6 +396,10 @@ div {
   &#shutter_speed {
     background-image: url(images/content/main_logos/shutter_speed_cover.png);
   }
+
+  &#upcycle {
+    background-image: url(images/content/main_logos/upcycle_cover.png);
+  }
 }
 
 section.web {
@@ -478,6 +482,10 @@ main#portfoliopage p.copy {
   text-align: right;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+#photography {
+  margin: 0;
 }
 
 /*Image viewer */
@@ -679,6 +687,10 @@ main#portfoliopage p.copy {
 
     &#shutter_speed {
       background-image: url(images/content/main_logos/shutter_speed_thumb.png);
+    }
+
+    &#upcycle {
+      background-image: url(images/content/main_logos/upcycle_thumb.png);
     }
 
     & span {
