@@ -585,7 +585,7 @@ main#portfoliopage p.copy {
 
       & div.video-container {
         height: 80vh;
-        width: 70vw;
+        width: 80vw;
       }
 
       & div.video-list {
@@ -610,10 +610,13 @@ main#portfoliopage p.copy {
           &.rise_shine {
             background-image: url(images/content/main_logos/rise_shine_thumb.png);
           }
-        }
 
-        & h4 {
-          display: none;
+          &:hover {
+            & p {
+              height: 100%;
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -699,7 +702,7 @@ main#portfoliopage p.copy {
     }
   }
 
-  main#portfoliopage p {
+  main#portfoliopage p.copy {
     font-size: 0.8rem;
     width: 80vw;
   }
