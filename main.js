@@ -1,4 +1,4 @@
-const imageViewers = document.querySelectorAll(".short");
+const imageViewers = document.querySelectorAll(".short, div.latest");
 const imageViewerContainer = document.querySelector(".image-viewer");
 const imageViewerImage = imageViewerContainer.querySelector("img");
 const h1 = imageViewerContainer.querySelector(".image-viewer h1");

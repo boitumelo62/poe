@@ -4,13 +4,13 @@
 
 body {
   background-color: #edf6f9;
-  background-size: 600% 600%;
-  font-family: "Como", Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
 main {
-  background: #edf6f9;
-  height: auto;
+  background-color: #edf6f9;
 }
 
 a {
@@ -29,7 +29,6 @@ header {
   left: 0;
   top: 0;
   border-bottom: #006d77 2px solid;
-  z-index: 10;
 }
 
 div.logo img {
@@ -95,7 +94,7 @@ main#home button {
 }
 
 main#home section {
-  height: 100vh;
+  height: 70vh;
   width: 88%;
   margin: 0 auto;
   display: flex;
@@ -108,9 +107,13 @@ main#home section.landing {
   flex-direction: column;
   text-align: center;
   gap: 1rem;
+  padding-top: 10vh;
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 4.4rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
     margin-bottom: 0;
   }
 
@@ -124,28 +127,155 @@ main#home section.landing {
   }
 }
 
-main#home section.about {
-  justify-content: space-between;
-  gap: 1rem;
+.landing-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: 1.05rem;
+  color: #006d77;
+}
 
-  h1 {
-    font-size: 2.2rem;
-  }
+.landing-eyebrow .year-badge {
+  background-color: #e29578;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 0.25rem 1rem;
+  font-size: 0.95rem;
+}
 
-  p {
-    font-size: 1.6rem;
-    width: 48vw;
-  }
+.landing-byline {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: 70%;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
 
-  img {
-    place-content: right;
-    align-items: right;
-    width: 100%;
+.landing-byline .byline-rule {
+  flex: 1;
+  height: 1px;
+  background-color: #006d77;
+}
+
+main#home section.hello {
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  padding: 130px 0 60px;
+}
+
+.hello-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+}
+
+.hello-intro img {
+  width: 220px;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.hello-copy h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem;
+}
+
+.hello-copy h1 em {
+  font-style: normal;
+  color: #e29578;
+}
+
+.hello-copy p.greeting {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.hello-copy p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  max-width: 58ch;
+}
+
+.contact-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.contact-line a {
+  color: #006d77;
+  border-bottom: 1px solid #006d77;
+  padding-bottom: 2px;
+
+  &:hover {
+    color: #e29578;
+    border-color: #e29578;
   }
 }
 
+.hello-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.detail-block h3 {
+  font-size: 1.1rem;
+  color: #006d77;
+  margin: 0 0 0.8rem;
+  border-bottom: 2px solid #006d77;
+  padding-bottom: 0.4rem;
+}
+
+.detail-block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.detail-block ul li {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.detail-block ul li strong {
+  font-size: 0.95rem;
+}
+
+.detail-block ul li span {
+  color: #4a4a4a;
+  font-size: 0.78rem;
+}
+
+.detail-block ul.tags {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.detail-block ul.tags li {
+  background-color: #ffffff;
+  border: 1px solid #006d77;
+  border-radius: 50px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+}
+
 main#home section.closing {
-  height: 90vh;
   flex-direction: column;
   text-align: center;
   gap: 1.4rem;
@@ -153,6 +283,7 @@ main#home section.closing {
   h3 {
     font-size: 1.6rem;
     width: 82%;
+    font-weight: 500;
   }
 
   em {
@@ -176,19 +307,94 @@ main#portfoliopage {
   gap: 40px;
 }
 
+main#portfoliopage section.toc {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+section.toc h1 {
+  font-size: 2.6rem;
+  margin: 0 0 1rem;
+}
+
+.toc-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #006d77;
+  font-size: 1.3rem;
+  color: #000000;
+
+  &:hover {
+    color: #e29578;
+
+    & .toc-num {
+      color: #e29578;
+    }
+  }
+}
+
+.toc-num {
+  color: #006d77;
+  font-size: 1.1rem;
+  min-width: 2.5rem;
+}
+
+.category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.category-title {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.category-title .num {
+  background-color: #006d77;
+  color: #edf6f9;
+  border-radius: 50px;
+  padding: 0.3rem 1.1rem;
+  font-size: 1.1rem;
+}
+
+.category-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
 main#portfoliopage div.short {
   background-color: #edf6f9;
   height: 50vh;
   width: 60vw;
   margin: 0 auto;
   border-radius: 1rem;
-  background-size: origin;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #edf6f9;
   place-content: end;
   display: grid;
   text-align: left;
+
+  &#shutter_speed {
+    background-size: auto;
+  }
 }
 
 main#portfoliopage div.short {
@@ -203,6 +409,10 @@ main#portfoliopage div.short {
     background-position-x: left;
     background-size: cover;
     transition: all 0.7s ease-in-out;
+
+    &#shutter_speed {
+      background-size: auto;
+    }
 
     & span {
       margin: 20px;
@@ -465,16 +675,16 @@ section.web {
   }
 }
 
+#photography {
+  margin: 0;
+}
+
 main#portfoliopage p.copy {
   font-size: 1rem;
   width: 60vw;
   text-align: right;
   margin: 0 auto;
   padding-bottom: 20px;
-}
-
-#photography {
-  margin: 0;
 }
 
 /*Image viewer */
@@ -485,7 +695,7 @@ main#portfoliopage p.copy {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow-y: auto;
   scroll-behavior: control;
@@ -524,11 +734,12 @@ main#portfoliopage p.copy {
   }
 
   main#home section.landing {
-    height: 90vh;
+    height: 80vh;
     gap: 1rem;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
+      letter-spacing: 0;
     }
 
     h3 {
@@ -542,27 +753,53 @@ main#portfoliopage p.copy {
     }
   }
 
-  main#home section.about {
-    height: 88%;
+  .landing-eyebrow {
+    font-size: 0.9rem;
+  }
+
+  .landing-byline {
+    width: 88%;
+    font-size: 0.9rem;
+    gap: 0.8rem;
+  }
+
+  main#home section.hello {
+    height: auto;
+    min-height: auto;
+    padding: 100px 0 40px;
+    gap: 2rem;
+  }
+
+  .hello-intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .hello-intro img {
+    width: 40vw;
+  }
+
+  .hello-copy h1 {
+    font-size: 2.2rem;
+  }
+
+  .hello-copy p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .contact-line {
     justify-content: center;
-    place-items: center;
+    font-size: 0.85rem;
+    gap: 1rem;
+  }
+
+  .hello-details {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
     text-align: left;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-
-    h1 {
-      margin-top: 0;
-      font-size: 2rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      width: 88vw;
-    }
-
-    img {
-      width: 30vh;
-    }
   }
 
   main#home section.closing {
@@ -584,50 +821,25 @@ main#portfoliopage p.copy {
     }
   }
 
-  section.projects {
-    & section.video {
-      flex-direction: column;
+  /*portfolio*/
 
-      & div.video-container {
-        height: 80vh;
-        width: 80vw;
-      }
-
-      & div.video-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2vw;
-        place-items: center;
-
-        div {
-          height: 20vh;
-          width: 20vw;
-          font-size: 1rem;
-
-          &.jozi_foodie {
-            background-image: url(images/content/main_logos/jozi_foodie_thumb.png);
-          }
-
-          &.aetheros {
-            background-image: url(images/content/main_logos/aetheros_thumb.png);
-          }
-
-          &.rise_shine {
-            background-image: url(images/content/main_logos/rise_shine_thumb.png);
-          }
-
-          &:hover {
-            & p {
-              height: 100%;
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
+  main#portfoliopage section.toc {
+    width: 80vw;
   }
 
-  /*portfolio*/
+  section.toc h1 {
+    font-size: 2rem;
+  }
+
+  .toc-item {
+    font-size: 1.1rem;
+    padding: 0.9rem 0;
+  }
+
+  .category-title {
+    width: 80vw;
+    font-size: 1.5rem;
+  }
 
   main#portfoliopage div.short {
     background-size: cover;
@@ -699,6 +911,49 @@ main#portfoliopage p.copy {
     right: 4vw;
   }
 
+  section.projects {
+    & section.video {
+      flex-direction: column;
+
+      & div.video-container {
+        height: 50vh;
+        width: 80vw;
+      }
+
+      & div.video-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2vw;
+        place-items: center;
+
+        div {
+          height: 20vh;
+          width: 20vw;
+          font-size: 1rem;
+
+          &.jozi_foodie {
+            background-image: url(images/content/main_logos/jozi_foodie_thumb.png);
+          }
+
+          &.aetheros {
+            background-image: url(images/content/main_logos/aetheros_thumb.png);
+          }
+
+          &.rise_shine {
+            background-image: url(images/content/main_logos/rise_shine_thumb.png);
+          }
+
+          &:hover {
+            & p {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
   section.web {
     width: 80vw;
 
@@ -710,5 +965,6 @@ main#portfoliopage p.copy {
   main#portfoliopage p.copy {
     font-size: 0.8rem;
     width: 80vw;
+    margin: 0 auto;
   }
 }
